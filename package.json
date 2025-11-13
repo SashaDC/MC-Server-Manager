@@ -1,16 +1,16 @@
 {
-  "name": "boilerplate-phase1",
+  "name": "mc-server-manager",
   "type": "module",
-  "version": "0.2.0",
-  "description": "React with react-query!",
-  "repository": "https://github.com/dev-academy-challenges/boilerplate-phase1.git",
+  "version": "0.1.0",
+  "description": "Electron-based Minecraft server manager with React for component structure, routing, and API fetching",
+  "repository": "https://github.com/SashaDC/MC-Server-Manager.git",
   "main": "server/index.js",
   "scripts": {
     "dev": "vite",
+    "start": "electron .",
     "build": "vite build",
-    "test": "vitest",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx .",
-    "format": "prettier -w '**/*.{js,jsx,ts,tsx}'"
+    "format": "prettier -w '**/*.{ts,tsx,js,jsx}'"
   },
   "eslintConfig": {
     "extends": "@devacademy/eslint-config/react",
@@ -18,23 +18,22 @@
       "bundle.js"
     ]
   },
-  "author": "Dev Academy Aotearoa",
+  "author": "Sasha DC",
   "license": "ISC",
   "dependencies": {
-    "superagent": "^8.1.2"
+    "electron": "^39.1.2",
+    "react": "^18.0.2",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.11.2",
+    "superagent": "^8.1.2",
+    "@tanstack/react-query": "^5.12.2",
+    "@tanstack/react-query-devtools": "^5.13.3"
   },
   "devDependencies": {
     "@devacademy/eslint-config": "^1.10.1",
     "@tanstack/eslint-plugin-query": "^5.12.2",
-    "@tanstack/react-query": "^5.12.2",
-    "@tanstack/react-query-devtools": "^5.13.3",
-    "@testing-library/react": "^14.0.0",
-    "@types/node": "^18.11.9",
-    "@types/react": "^18.0.28",
-    "@types/react-dom": "^18.0.11",
-    "@types/superagent": "^8.1.1",
-    "@types/supertest": "^6.0.2",
     "@vitejs/plugin-react": "^4.2.1",
+    "typescript": "^5.3.3",
     "eslint": "^8.56.0",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-jsx-a11y": "^6.8.0",
@@ -43,16 +42,8 @@
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.34.1",
     "eslint-plugin-react-hooks": "^4.6.2",
-    "jsdom": "^22.1.0",
-    "npm-run-all": "^4.1.5",
     "prettier": "^3.2.5",
-    "react": "^18.0.2",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.11.2",
-    "supertest": "^6.3.4",
-    "typescript": "^5.3.3",
-    "vite": "^5.0.0",
-    "vitest": "^1.2.0"
+    "vite": "^5.0.0"
   },
   "prettier": {
     "semi": false,
