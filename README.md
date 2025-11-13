@@ -1,26 +1,39 @@
-# Phase 1 Boilerplate
+# Minecraft Server Manager
 
-## Packages Included
+This is an Electron-based Minecraft server managing app that uses React for the component structure, routing, and API fetching.
 
-- react
-- react-router-dom
-- @tanstack/react-query
-- vite
-- vitest
-- eslint
+## Tech Stack
 
-## Setup
+**Client:** React, Electron, Vite
 
-- [ ] Clone this repo, navigate to it, install packages, and start the server with `npm run dev`
-  <details style="padding-left: 2em">
-    <summary>Tip</summary>
+## Run Locally
 
-    ```sh
-    npm install
-    npm run dev
-    ```
-  </details>
+Clone the project
 
----
+```bash
+  git clone https://link-to-project
+```
 
-[Provide feedback on this repo](https://docs.google.com/forms/d/e/1FAIpQLSfw4FGdWkLwMLlUaNQ8FtP2CTJdGDUv6Xoxrh19zIrJSkvT4Q/viewform?usp=pp_url&entry.1958421517=boilerplate-phase1)
+Go to the project directory
+
+```bash
+  cd my-project
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the app
+
+```bash
+  npm run start
+```
+
+...Or run it in browser with
+
+```bash
+  npm run dev
+```
