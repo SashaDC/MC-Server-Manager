@@ -5,6 +5,9 @@ const createWindow = () => {
     width: 800,
     height: 600,
     autoHideMenuBar: true,
+    webPreferences: {
+      devTools: false,
+    },
   })
 
   win.loadFile('dist/index.html')
