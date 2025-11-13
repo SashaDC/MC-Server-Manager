@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "description": "Electron-based Minecraft server manager with React for component structure, routing, and API fetching",
   "repository": "https://github.com/SashaDC/MC-Server-Manager.git",
-  "main": "server/index.js",
+  "main": "main.cjs",
   "scripts": {
     "dev": "vite",
     "start": "electron .",
@@ -21,19 +21,19 @@
   "author": "Sasha DC",
   "license": "ISC",
   "dependencies": {
+    "@tanstack/react-query": "^5.12.2",
+    "@tanstack/react-query-devtools": "^5.13.3",
     "electron": "^39.1.2",
     "react": "^18.0.2",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.11.2",
-    "superagent": "^8.1.2",
-    "@tanstack/react-query": "^5.12.2",
-    "@tanstack/react-query-devtools": "^5.13.3"
+    "superagent": "^8.1.2"
   },
   "devDependencies": {
     "@devacademy/eslint-config": "^1.10.1",
     "@tanstack/eslint-plugin-query": "^5.12.2",
+    "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^4.2.1",
-    "typescript": "^5.3.3",
     "eslint": "^8.56.0",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-jsx-a11y": "^6.8.0",
@@ -43,6 +43,7 @@
     "eslint-plugin-react": "^7.34.1",
     "eslint-plugin-react-hooks": "^4.6.2",
     "prettier": "^3.2.5",
+    "typescript": "^5.3.3",
     "vite": "^5.0.0"
   },
   "prettier": {
