@@ -1,4 +1,4 @@
-# Minecraft Server Manager
+# Minecraft Server Manager (WIP
 
 This is an Electron-based Minecraft server managing app that uses React for the component structure, routing, and API fetching.
 
