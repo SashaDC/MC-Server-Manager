@@ -9,7 +9,7 @@ import { useManifestData } from '../hooks/useAPIs'
 // - Style the page nicely.
 
 export default function Home() {
-  const { isLoading, isError } = useManifestData()
+  const { isLoading, isError, data } = useManifestData()
 
   if (isLoading) {
     return <div>Loading...</div>
@@ -41,7 +41,7 @@ export default function Home() {
         <Link to="select-server">
           <button>Select Server</button>
         </Link>
-        <Link to="create-server">
+        <Link to="create-server" state={data}>
           <button>Create Server</button>
         </Link>
       </main>
