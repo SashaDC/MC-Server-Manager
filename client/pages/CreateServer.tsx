@@ -1,5 +1,12 @@
+import { useState } from 'react'
+
 export default function CreateServer() {
   // Test data, replace with actual API data later
+  const [filter, setFilter] = useState('release')
+
+  const handleFilterChange = (newFilter: string) => {
+    setFilter(newFilter)
+  }
   const data = [
     { id: '1.19.4', name: '1.19.4', type: 'release' },
     { id: '1.20', name: '1.20', type: 'snapshot' },
@@ -17,7 +24,11 @@ export default function CreateServer() {
         <label htmlFor="serverVersion">Server Version:</label>
         <select id="serverVersion" name="serverVersion">
           {data.map((version) => (
-            <option key={version.id} value={version.id}>
+            <option
+              key={version.id}
+              value={version.id}
+              style={{ display: version.type === filter ? 'block' : 'none' }}
+            >
               {version.name}
             </option>
           ))}
@@ -27,12 +38,25 @@ export default function CreateServer() {
           id="release"
           name="option"
           value="release"
-          defaultChecked
+          checked={filter === 'release'}
+          onChange={() => handleFilterChange('release')}
         />
         <label htmlFor="release">Release</label>
-        <input type="radio" id="snapshot" name="option" value="snapshot" />
+        <input
+          type="radio"
+          id="snapshot"
+          name="option"
+          value="snapshot"
+          onChange={() => handleFilterChange('snapshot')}
+        />
         <label htmlFor="snapshot">Snapshot</label>
-        <input type="radio" id="other" name="option" value="other" />
+        <input
+          type="radio"
+          id="other"
+          name="option"
+          value="other"
+          onChange={() => handleFilterChange('other')}
+        />
         <label htmlFor="other">Other</label>
 
         <br />
