@@ -1,4 +1,4 @@
-import { useState, ChangeEvent, version } from 'react'
+import { useState, ChangeEvent } from 'react'
 import { useLocation } from 'react-router-dom'
 import ServerCreationLogic from '../components/CreateServerLogic'
 
