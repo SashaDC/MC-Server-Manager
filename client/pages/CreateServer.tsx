@@ -8,6 +8,9 @@ interface Props {
   type: string
 }
 
+// To fix:
+// Theres an issue where if the server name doesnt match the regex and the alert happens, then the user is unable to change the input unless they reload the page.
+
 export default function CreateServer() {
   // This gets the data passed from the Home component via the Link's state prop.
   const location = useLocation()
