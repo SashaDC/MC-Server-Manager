@@ -1,0 +1,9 @@
+button:hover,
+input[type='radio']:hover,
+#radio:hover {
+  cursor: pointer;
+}
+
+#radio {
+  margin-right: 5px;
+}
